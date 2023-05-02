@@ -71,11 +71,11 @@ public class Pizza {
 
         bill+="Base Price Of The Pizza: " +basePrice+ "\n";
         if(cheeseToBeAdded) {
-            this.bill += "Extra Cheese Added: " + extraCheese + "\n";
+            this.bill += "Extra Cheese Added: "+ extraCheese+"\n";
         }
         if(toppingsToBeAdded) {
 
-           this.bill += "Extra Toppings Added: " + extraVegTopping + "\n";
+           this.bill += "Extra Toppings Added: "+extraVegTopping+"\n";
         }
         if(isPaperbagAdded){
            this.bill+="Paperbag Added: "+paperBag+"\n";
