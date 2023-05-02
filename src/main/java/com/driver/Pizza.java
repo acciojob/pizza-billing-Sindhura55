@@ -70,12 +70,14 @@ public class Pizza {
         this.bill="";
 
         bill+="Base Price Of The Pizza: " +basePrice+ "\n";
-        if(cheeseToBeAdded) {
+        if(this.cheeseToBeAdded) {
             this.bill += "Extra Cheese Added: "+ extraCheese+"\n";
         }
         if(toppingsToBeAdded) {
-
+           if(this.isVeg)
            this.bill += "Extra Toppings Added: "+extraVegTopping+"\n";
+           else
+            this.bill+="Extra Toppings Added: "+extraNonVegTopping+"\n";
         }
         if(isPaperbagAdded){
            this.bill+="Paperbag Added: "+paperBag+"\n";
